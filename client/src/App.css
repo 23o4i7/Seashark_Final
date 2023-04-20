@@ -1,0 +1,142 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.addButton {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 75vw;
+  justify-content: space-around;
+  align-content: center;
+  margin: auto;
+}
+
+.cuisineSection {
+  float: left;
+  width: 25%;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+
+.foodSection {
+  float: left;
+  width: 60%;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  margin: 10px;
+}
+
+.editbutton {
+  font-size: 10px;
+  margin: 5px;
+  background-color: green;
+}
+
+.deletebutton {
+  font-size: 10px;
+  background-color: red;
+}
+
+.cuisinecard, .dishcard {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.cuisinecard__name, .dishcard__name {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.cuisinecard__region, .dishcard__cuisine {
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+.cuisinecard__description, .dishcard__description {
+  font-size: 0.9em;
+}
+
+#addCuisineForm input, #addDishForm input, #editCuisineForm input, #editDishForm input {
+  margin-bottom: 10px;
+}
+
+#addCuisineForm label, #addDishForm label, #editCuisineForm label, #editDishForm label {
+  font-weight: bold;
+} 
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+}
